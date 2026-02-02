@@ -1,26 +1,18 @@
 # AI Diagnostic Prototypes
 
-Collection of ethical AI prompt frameworks, diagnostic tools, and optimization scripts built since October 2025.  
-Focus: Responsible prompt engineering, anomaly detection, coherence monitoring, and systems analysis.
-
-## Folders
-- `/protocols` — Core prompt protocols (copy-paste ready for any AI chat)
-- `/examples` — Demonstrations and test runs (see how they work in practice)
+Ethical AI tools built since October 2025: prompt frameworks for unbiased analysis, anomaly detection, and systems diagnostics. Focus on safety boundaries, contradiction preservation, and vulnerability-like deviation flagging.
 
 ## Key Prototypes
-- **MIT Protocol: Multimodal Information Triangulation**  
-  Detects informational pulses, friction points, exclusions, and agency deviations across four fields.  
-  → [View Protocol](protocols/MIT-PROTOCOL.md)  
-  → [Fictional Site 002 Demo](examples/mit-fictional-demo.md)
+- **MIT Protocol** – Multimodal triangulation for friction/agency detection  
+  [Protocol](protocols/MIT-PROTOCOL.md) | [Fictional Demo](examples/mit-fictional-demo.md)
+- **Theoretical System Interpreter** – Neutral theory exploration  
+  [Protocol](protocols/THEORETICAL-SYSTEM-INTERPRETER.md)
+- **Kīlauea UCT/AMC Engine** – Volcanic phase transition monitor  
+  [Protocol](protocols/KILAUEA-UCT-AMC-DIAGNOSTIC-ENGINE.md)
+- **Front Attack Classroom Bridge** – Pedagogical scaffolding  
+  [Protocol](protocols/FRONT-ATTACK-CLASSROOM-BRIDGE.md)
+- **SpaceX Engine Anomaly Monitor** – Telemetry coherence & anomaly demo  
+  [Script](protocols/demos/spacex-engine-anomaly-monitor.py)
 
-- **Theoretical System Interpretation Protocol**  
-  Unbiased exploration of theories without consensus bias.  
-  → Coming soon
-
-- **Batch Coherence Monitor**  
-  Windows script for legacy hardware stability (+14% battery life).  
-  → Coming soon in `/scripts`
-
-All work developed with strict ethical boundaries—focus on safety and truth-seeking.
-
-For job applications (e.g., xAI Safety Tutor) or collaboration.
+All work developed responsibly—no jailbreaking or harmful probing.  
+GitHub for xAI Safety Tutor application & beyond.
