@@ -1,0 +1,36 @@
+# hybrid_ns_testdrive.py
+# Hybrid Navier-Stokes - Test Drive Version
+# Daniel's GitHub: import numpy as np
+import matplotlib.pyplot as plt
+
+def m_deriv(y, t, delta, alpha=0.90):
+    mt = 2 * delta
+    return (y[1 1]) / mt + alpha * y[1]  # placeholder for V, P
+
+def agency_stiffener(pressure, alpha):
+    return pressure / alpha
+
+def amc_index(base, eta=0.96, Q_factor=1.1, omega_amp=0.2, erosion=0.1):
+    return base * eta * Q_factor * (1 + omega_amp) * (1 + erosion)
+
+# Example: Raptor burn sim
+delta = 30  # seconds
+time_steps = np.arange(0, 300, delta)
+amc = []
+
+for t in time_steps:
+    # simulate rising risk
+    base = 0.6 + (t / 300) * 0.5
+    amc.append(amc_index(base, eta=max(0.93, 0.98 - t*0.0002),
+                         Q_factor=1.0 + t*0.0001,
+                         omega_amp=0.2 * np.sin(t * 5 * np.pi / 180),
+                         erosion=t / 3000))
+
+plt.plot(time_steps, amc, label="AMC Index")
+plt.axhline(1.0, color='r', linestyle='--', label="Abort")
+plt.title("Raptor 300s Burn - Hybrid NS Prediction")
+plt.xlabel("Time (s)")
+plt.ylabel("AMC Index")
+plt.legend()
+plt.grid()
+plt.show()
